@@ -1,0 +1,61 @@
+
+
+html {
+  background-color: #eaedf0;
+}
+
+
+body {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+  }
+
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid black;
+    width: 300px;
+}
+
+.find {
+    padding: 0%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+label {
+    position: relative;
+  }
+
+input {
+    position: fixed;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.btn {
+	border-radius: 40px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	cursor: pointer;
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+    margin: 10px;
+}
+
+.input-box {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.ctn-btn {
+    width: 100px;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}

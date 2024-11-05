@@ -1,0 +1,21 @@
+{% extends "base_template.html" %}
+
+{% block title %}
+<title>SCORE</title>
+{% endblock title%}
+
+
+
+{% block body_content %}
+
+<header>
+    <nav>
+        <a href="{{ url_for('home') }}">Acceuil</a>
+        <a href="{{ url_for('test') }}">Quizz</a>
+        <a href="">Bibliotheque</a></li>
+    </nav>
+</header>
+
+<h1>SCORE</h1>
+<p>{{ score }}</p>
+{% endblock body_content%}

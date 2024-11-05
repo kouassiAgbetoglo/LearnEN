@@ -1,0 +1,39 @@
+{% extends "base_template.html" %}
+
+{% block link %}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/test.css') }}">
+{% endblock link %}
+
+
+
+{% block title %}
+<title>TEST</title>
+{% endblock title%}
+
+
+{% block body_content %}
+
+<header>
+    <a href="{{ url_for('home') }}">Acceuil</a>
+    <a href="">Bibliotheque</a></li>
+</header>
+
+<h1>Anglais à la Française : Teste Tes Talents</h1>
+<p>Bienvenue sur notre plateforme de quiz de traduction anglais-français ! Testez vos compétences linguistiques et amusez-vous à traduire des mots anglais en français. Prêt à commencer ? C'est parti !</p>
+
+<div class="wrapper">
+
+        <p class="find">{{ word }}</p>
+        
+        <form action="/submit" method="post">
+            
+            <div class="input-box">
+                <label>Réponse:</label><input type="text" name="answer">
+            </div>
+            
+            <div class="ctn-btn">
+                <button type="submit" class="btn">Valider</button>
+            </div>
+        </form>
+</div>
+{% endblock body_content%}

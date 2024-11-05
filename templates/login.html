@@ -1,0 +1,43 @@
+{% extends "base_template.html" %}
+
+{% block link %}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/login.css') }}">
+{% endblock link %}
+
+{% block title %} 
+<title>Login</title>
+{% endblock title %} 
+
+{% block body_content %}
+
+<div class="wrapper">
+    <h1>Connexion</h1>
+
+    <form action ="#" method="post">
+    
+        <div class="input-box">
+            <input type="text" name="username" placeholder="Nom d'utilisateur" required>
+            {% if error == "user-error" %}
+                <p class="error-message">Nom d'utilisateur incorrect</p>
+            {% endif %}
+        </div>
+
+        <div class="input-box">
+            <input type="password" name="password" placeholder="Mot de passe"  required>
+            {% if error == "pw-error" %}
+                <p class="error-message">Mot de passe incorrect.</p>
+            {% endif %}
+        </div>
+
+        <button type="submit" class="btn">Se connecter</button>
+
+        <div class="register">
+            <a href="{{ url_for('register') }}"><p>S'inscrire</p></a>
+            <a href="{{ url_for('reset_password') }}"><p>Mot de passe oublié</p></a>
+        </div>
+
+    </form>
+</div>
+{% endblock body_content %}
+
+

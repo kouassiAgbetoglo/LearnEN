@@ -1,0 +1,14 @@
+<div id='up'>
+    <table>
+        <tr>
+            <th>Word</th>  
+            <th>French translation</th>  
+        </tr>
+        {% for item in d_word%}
+        <tr>
+            <td>{{item[1]}}</td>
+            <td>{{item[2]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>

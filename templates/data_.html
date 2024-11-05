@@ -1,0 +1,23 @@
+{% extends "base_template.html" %}
+
+{% block title %}
+<title>Daily words</title>
+{% endblock title%}
+
+{% block body_content %}
+<h1>Daily words</h1>
+<div>
+    <table>
+        <tr>
+            <th>Word</th>  
+            <th>French translation</th>  
+        </tr>
+        {% for item in data%}
+        <tr>
+            <td>{{item[1]}}</td>
+            <td>{{item[2]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock body_content%}

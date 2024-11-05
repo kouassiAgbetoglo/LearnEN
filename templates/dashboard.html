@@ -1,0 +1,17 @@
+{% extends "base_template.html" %}
+
+{% block title %}
+<title>Dashboard</title>
+{% endblock title %}
+
+{%block body_content %}
+<header>
+    <nav>
+        <a href="{{ url_for('test') }}">Quizz</a>
+        <a href="">Bibliotheque</a></li>
+    </nav>
+</header>
+
+<h1>Welcome to the Dashboard</h1>
+<a href="{{ url_for('logout') }}">Logout</a>
+{% endblock body_content %}

@@ -1,0 +1,1 @@
+SELECT * FROM WORDS WHERE word_id == 2;
